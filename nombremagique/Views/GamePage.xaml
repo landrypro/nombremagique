@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="nombremagique.Views.GamePage"
+             BackgroundColor="Silver">
+    
+    <ContentPage.Content  >
+        <StackLayout>
+            <Label  Text="Devinez le"
+                   HorizontalOptions="CenterAndExpand"  
+                    FontSize="35" Margin="0,40,0,0"/>
+            <Label  Text="Nombre magique"
+                   HorizontalOptions="CenterAndExpand"  
+                    FontSize="35" />
+
+            <Label x:Name="lblTitre" 
+                   Text="Entre X et X" 
+              
+                   HorizontalOptions="CenterAndExpand"  
+                   FontSize="20" 
+                   FontAttributes="Italic"   />
+
+            <Entry x:Name="txtEntry" Placeholder="?"  
+                   Keyboard="Numeric" 
+                   HorizontalOptions="CenterAndExpand" 
+                   FontSize="70" WidthRequest="120" 
+                   HorizontalTextAlignment="Center"/>
+
+            <Button x:Name="btnDevine" 
+                    Text="Deviner" 
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"  
+                    Clicked="btnDevine_Clicked" 
+                    BackgroundColor="Blue" 
+                    TextColor="White" WidthRequest="120"/>   
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
